@@ -24,4 +24,4 @@ build/
 *.njsproj
 *.sln
 *.sw?
-.vs/
+.vs/*
