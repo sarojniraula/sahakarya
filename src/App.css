@@ -1,28 +1,25 @@
-/* Resetting Default Styles */
 html, body, #root {
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Optional: Full height for vertical scaling */
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent unwanted horizontal scrolling */
+    overflow-x: hidden;
 }
 
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9;
 }
 
 .container {
-    width: 100%; /* Full width of the viewport */
-    max-width: 1200px; /* Optional: Restrict width for readability */
-    margin: 0 auto; /* Center the content */
-    padding: 0 1rem; /* Add padding for smaller screens */
-    text-align: center; /* Center-align text */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: white;
@@ -32,11 +29,11 @@ header {
     z-index: 1000;
 }
 
-    header h1 {
-        margin: 0;
-        font-size: 2rem;
-        text-align: center;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
 
 nav ul {
     list-style: none;
@@ -47,18 +44,17 @@ nav ul {
     margin: 0;
 }
 
-    nav ul li {
-        cursor: pointer;
-        color: white;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-    }
+nav ul li {
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
 
-        nav ul li:hover {
-            text-decoration: underline;
-        }
+nav ul li:hover {
+    text-decoration: underline;
+}
 
-/* Hero Section */
 .hero {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
@@ -66,62 +62,59 @@ nav ul {
     padding: 4rem 1rem;
 }
 
-    .hero h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
 
-    .hero p {
-        font-size: 1.2rem;
-        max-width: 800px;
-        margin: 0 auto; /* Center the text */
-    }
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-/* Section Styling */
 section {
     padding: 2rem 0;
 }
 
-    section h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: #333;
-        text-align: center;
-    }
+section h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
 
-    section p {
-        font-size: 1rem;
-        max-width: 800px;
-        margin: 0 auto; /* Center the text */
-        line-height: 1.8;
-    }
+section p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
 
-/* Activities Section */
 #activities ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center-align the activity cards */
+    justify-content: center;
     gap: 1rem;
 }
 
-    #activities ul li {
-        background-color: #ffffff;
-        padding: 1rem;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        width: 250px; /* Fixed width for uniform card size */
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+#activities ul li {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        #activities ul li:hover {
-            background-color: #f4f4f4;
-        }
+#activities ul li:hover {
+    background-color: #f4f4f4;
+}
 
-/* Contact Form */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -132,34 +125,33 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-    form label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-    }
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
 
-    form input, form textarea, form button {
-        width: 100%;
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 1rem;
-    }
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
 
-    form button {
-        background-color: #6a11cb;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-weight: bold;
-    }
+form button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-        form button:hover {
-            background-color: #2575fc;
-        }
+form button:hover {
+    background-color: #2575fc;
+}
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -168,23 +160,23 @@ footer {
     font-size: 0.9rem;
 }
 
-    footer a {
-        color: #6a11cb;
-        text-decoration: none;
-    }
+footer a {
+    color: #6a11cb;
+    text-decoration: none;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a:hover {
+    text-decoration: underline;
+}
 
 #activities .container ul {
     list-style: none;
     padding: 0;
 }
 
-    #activities .container ul li {
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+#activities .container ul li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

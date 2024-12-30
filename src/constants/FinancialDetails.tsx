@@ -1,6 +1,4 @@
-// src/constants/FinancialDetails.tsx
-
-import members from './Members'; // Import the full members list
+import members from '../constants/Members';
 
 const financialDetails = [
     { date: 'September 2024', name: 'Dhaniram Sharma Bhandari', status: 'Received' },

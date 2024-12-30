@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import members from '../constants/members'; // Import the members array
-import './ComponetCss.css'; // Optional: Move styles to a CSS file
+import members from '../constants/Members';
+import './ComponetCss.css';
 
 function AboutUs() {
-    // State to toggle between "About Us" content and "Teams" content
     const [showTeams, setShowTeams] = useState(false);
 
     return (
         <section id="about-us" className="container">
             <h2>About Us</h2>
 
-            {/* Buttons to toggle between "About Us" and "Teams" */}
             <div className="toggle-buttons">
                 <button
                     onClick={() => setShowTeams(false)}
@@ -26,7 +24,6 @@ function AboutUs() {
                 </button>
             </div>
 
-            {/* Conditional rendering for About Us or Teams content */}
             {!showTeams ? (
                 <div>
                     <p>
