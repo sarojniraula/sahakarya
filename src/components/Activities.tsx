@@ -4,7 +4,7 @@ import financialDetails from '../constants/FinancialDetails';
 import './ComponetCss.css';
 
 function Activities() {
-    const [activeActivity, setActiveActivity] = useState(null);
+    const [activeActivity, setActiveActivity] = useState<"meetingVenues" | "financialDetails" | null>(null);
 
     return (
         <section id="activities" className="container">
