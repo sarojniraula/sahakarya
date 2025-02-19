@@ -1,11 +1,16 @@
 import members from '../constants/Members';
 
 const financialDetails = [
-    { date: 'September 2024', name: 'Dhaniram Sharma Bhandari', status: 'Received' },
-    { date: 'October 2024', name: 'Pashupati Sapkota', status: 'Received' },
-    { date: 'November 2024', name: 'Saroj Niraula', status: 'Received' },
-    { date: 'December 2024', name: 'Chudamani Parajuli', status: 'Receiving' },
-    { date: 'January 2025', name: 'Lok Raj Dhungana', status: 'Will Receive' },
+    { date: 'September 2024', name: 'Dhaniram Sharma Bhandari' },
+    { date: 'October 2024', name: 'Pashupati Sapkota' },
+    { date: 'November 2024', name: 'Saroj Niraula' },
+    { date: 'December 2024', name: 'Chudamani Parajuli' },
+    { date: 'January 2025', name: 'Lok Raj Dhungana' },
+    { date: 'February 2025', name: 'Pashupati Nepali' },
+    { date: 'March 2025', name: 'Parbat Prasai' },
+    { date: 'April 2025', name: 'Alok Yadav' },
+    { date: 'May 2025', name: 'Suman Pudasaini' },
+    { date: 'June 2025', name: 'Lila Nath Adhikari' },
 ];
 
 // Exclude Krishna Prasad Parajuli when marking remaining members as "Yet to Receive"
@@ -16,7 +21,7 @@ members.forEach((member) => {
         !financialDetails.some((detail) => detail.name === member) &&
         !excludedMembers.includes(member)
     ) {
-        financialDetails.push({ date: 'Undecided', name: member, status: 'Yet to Receive' });
+        financialDetails.push({ date: 'Undecided', name: member });
     }
 });
 
