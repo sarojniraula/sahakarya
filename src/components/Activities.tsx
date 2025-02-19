@@ -35,10 +35,17 @@ function Activities() {
                     <ul>
                         {meetingVenues.map((event, index) => {
                             const [monthStr, yearStr] = event.date.split(" ");
-                            const monthIndex = new Date(Date.parse(monthStr + " 1, " + yearStr)).getMonth();
-                            const eventDate = new Date(yearStr, monthIndex, 1);
                             
-                            const statusClass = eventDate < new Date() ? "done" : "upcoming";
+                            const yearNum = parseInt(yearStr, 10);
+                            
+                            const monthIndex = new Date(Date.parse(monthStr + " 1, " + yearNum)).getMonth();
+                            
+                            const eventDate = new Date(yearNum, monthIndex, 1);
+                            
+                            const today = new Date();
+                            today.setDate(1);
+                            
+                            const statusClass = eventDate < today ? "done" : "upcoming";
 
                             return (
                                 <li key={index} className={`event-item ${statusClass}`}>
@@ -56,8 +63,12 @@ function Activities() {
                     <ul>
                         {financialDetails.map((detail, index) => {
                             const [monthStr, yearStr] = detail.date !== "Undecided" ? detail.date.split(" ") : [null, null];
-                            const monthIndex = monthStr ? new Date(Date.parse(monthStr + " 1, " + yearStr)).getMonth() : null;
-                            const eventDate = monthStr ? new Date(yearStr, monthIndex, 1) : null;
+                            
+                            const yearNum = yearStr ? parseInt(yearStr, 10) : null;
+                            
+                            const monthIndex = monthStr ? new Date(Date.parse(monthStr + " 1, " + yearNum)).getMonth() : null;
+                            
+                            const eventDate = (yearNum !== null && monthIndex !== null) ? new Date(yearNum, monthIndex, 1) : null;
                             
                             const today = new Date();
                             today.setDate(1);
