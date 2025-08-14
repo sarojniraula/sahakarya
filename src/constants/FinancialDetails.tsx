@@ -11,6 +11,7 @@ const financialDetails = [
     { date: 'April 2025', name: 'Alok Yadav' },
     { date: 'May 2025', name: 'Suman Pudasaini' },
     { date: 'June 2025', name: 'Lila Nath Adhikari' },
+    { date: 'July 2025', name: 'Satya Sharma Prakash Kandel' },
 ];
 
 // Exclude Krishna Prasad Parajuli when marking remaining members as "Yet to Receive"
