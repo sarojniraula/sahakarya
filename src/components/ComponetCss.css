@@ -50,6 +50,12 @@
     color: #333;
 }
 
+.hero-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 /* Activities Container */
 #activities .container {
     text-align: center;
