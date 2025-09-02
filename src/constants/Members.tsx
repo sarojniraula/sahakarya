@@ -1,6 +1,6 @@
 const members = [
     'Dipak Jung Rayamajhi',
-    'Krishna Prasad Adhikari',
+    'Krishna Bahadur Adhikari',
     'Suman Pudasaini',
     'Chudamani Parajuli',
     'Loknath Timsina',

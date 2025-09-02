@@ -19,10 +19,10 @@
     font-size: 1rem;
 }
 
-    .toggle-button.active {
-        background-color: #6a11cb;
-        color: white;
-    }
+.toggle-button.active {
+    background-color: #6a11cb;
+    color: white;
+}
 
 /* Team members */
 .team-list {
@@ -44,11 +44,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-    .team-member h4 {
-        margin: 0.5rem 0;
-        font-size: 1.2rem;
-        color: #333;
-    }
+.team-member h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
 
 /* Activities Container */
 #activities .container {
@@ -65,54 +65,60 @@
     justify-content: center;
 }
 
-    #activities ul li button {
-        padding: 0.5rem 1rem;
-        background-color: #ddd;
-        color: black;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s, color 0.3s;
-    }
+#activities ul li button {
+    padding: 0.5rem 1rem;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        #activities ul li button.active {
-            background-color: #6a11cb;
-            color: white;
-        }
+#activities ul li button.active {
+    background-color: #6a11cb;
+    color: white;
+}
 
-    /* General Event Items */
-    #activities ul li.event-item {
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        font-size: 1rem;
-    }
+/* General Event Items */
+#activities ul li.event-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
 
-        #activities ul li.event-item.receiving {
-            background-color: #d1ecf1; /* Light Blue */
-            border: 1px solid #bee5eb;
-            color: #0c5460;
-        }
+#activities ul li.event-item.receiving {
+    background-color: #d1ecf1; /* Light Blue */
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+}
 
-        /* Past Events: Received */
-        #activities ul li.event-item.done {
-            background-color: #d4edda; /* Green */
-            border: 1px solid #c3e6cb;
-            color: #155724;
-        }
+/* Past Events: Received */
+#activities ul li.event-item.done {
+    background-color: #d4edda; /* Green */
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
 
-        /* Upcoming Events: Will Receive */
-        #activities ul li.event-item.upcoming {
-            background-color: #fff3cd; /* Yellow */
-            border: 1px solid #ffeeba;
-            color: #856404;
-        }
+/* Upcoming Events: Will Receive */
+#activities ul li.event-item.upcoming {
+    background-color: #fff3cd; /* Yellow */
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
 
-        /* Yet to Receive */
-        #activities ul li.event-item.yet-to-receive {
-            background-color: #f8d7da; /* Red */
-            border: 1px solid #f5c6cb;
-            color: #721c24;
-        }
+/* Yet to Receive */
+#activities ul li.event-item.yet-to-receive {
+    background-color: #e2e3e5; /* light gray background */
+    border: 1px solid #d6d8db;
+    color: #6c757d; /* gray text */
+}
+
+#activities ul li.event-item.exited {
+    background-color: #f8d7da; /* Red */
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}

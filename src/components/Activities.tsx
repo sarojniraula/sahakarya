@@ -1,6 +1,6 @@
 ﻿import { useState } from 'react';
 import meetingVenues from '../constants/MeetingVenues';
-import financialDetails from '../constants/FinancialDetails';
+import financialDetails, { exitedMembers } from '../constants/FinancialDetails';
 import './ComponetCss.css';
 
 function Activities() {
@@ -86,6 +86,10 @@ function Activities() {
                             } else {
                                 statusClass = "yet-to-receive";
                             }
+
+                            if (exitedMembers.includes(detail.name)) {
+                                statusClass = "exited";
+                            }
                             
                             let displayText = "";
                             if (statusClass === "done") {
@@ -94,6 +98,8 @@ function Activities() {
                                 displayText = `${detail.name} will receive funds.`;
                             } else if (statusClass === "receiving") {
                                 displayText = `${detail.name} is currently receiving funds.`;
+                            } else if (statusClass === "exited") {
+                                displayText = `${detail.name} has exited after clearing funds.`;
                             } else {
                                 displayText = `Member ${detail.name} has yet to receive funds.`;
                             }

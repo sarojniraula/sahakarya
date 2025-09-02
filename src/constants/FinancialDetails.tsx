@@ -12,16 +12,21 @@ const financialDetails = [
     { date: 'May 2025', name: 'Suman Pudasaini' },
     { date: 'June 2025', name: 'Lila Nath Adhikari' },
     { date: 'July 2025', name: 'Satya Prakash Sharma Kandel' },
-    { date: 'August 2025', name: 'Dipak Jung Rayamajhi' }
+    { date: 'August 2025', name: 'Dipak Jung Rayamajhi' },
+    { date: 'September 2024', name: 'Rajendra Timsina' },
+    { date: 'September 2024', name: 'Bharat Giri' }
 ];
 
 // Exclude Krishna Prasad Parajuli when marking remaining members as "Yet to Receive"
-const excludedMembers = ['Krishna Prasad Adhikari'];
+const excludedMembers = ['Krishna Bahadur Adhikari'];
+
+export const exitedMembers = ['Rajendra Timsina', 'Bharat Giri'];
 
 members.forEach((member) => {
     if (
         !financialDetails.some((detail) => detail.name === member) &&
-        !excludedMembers.includes(member)
+        !excludedMembers.includes(member) &&
+        !exitedMembers.includes(member)
     ) {
         financialDetails.push({ date: 'Undecided', name: member });
     }
