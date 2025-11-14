@@ -13,10 +13,10 @@ const financialDetails = [
     { date: 'June 2025', name: 'Lila Nath Adhikari' },
     { date: 'July 2025', name: 'Satya Prakash Sharma Kandel' },
     { date: 'August 2025', name: 'Dipak Jung Rayamajhi' },
-    { date: 'September 2024', name: 'Rajendra Timsina' },
-    { date: 'September 2024', name: 'Bharat Giri' },
-    { date: 'October 2024', name: 'Sushil Panta' },
-    { date: 'November 2024', name: 'Prem Khatri' }
+    { date: 'September 2025', name: 'Rajendra Timsina' },
+    { date: 'September 2025', name: 'Bharat Giri' },
+    { date: 'October 2025', name: 'Sushil Panta' },
+    { date: 'November 2025', name: 'Prem Khatri' }
 ];
 
 // Exclude Krishna Prasad Parajuli when marking remaining members as "Yet to Receive"
