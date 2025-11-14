@@ -116,6 +116,12 @@
     color: #856404;
 }
 
+#activities ul li.event-item.current-month {
+    background-color: #ffe5b4; /* light orange/peach */
+    border: 1px solid #ffcd94;
+    color: #da4104;
+}
+
 /* Yet to Receive */
 #activities ul li.event-item.yet-to-receive {
     background-color: #e2e3e5; /* light gray background */

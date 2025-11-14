@@ -11,13 +11,12 @@ const meetingVenues = [
     { name: 'Lok Raj Dhungana', date: 'April 2025' },
     { name: 'Suman Pudasaini', date: 'September 2025' },
     { name: 'Yuba Raj Regmi', date: 'October 2025' },
-    { name: 'Alok Yadav', date: 'November 2025' },
+    { name: 'Saroj Niraula', date: 'November 2025' },
     { name: 'Dhaniram Sharma Bhandari', date: 'December 2025' },
-    { name: 'Saroj Niraula', date: 'January 2026' },
+    { name: 'Alok Yadav', date: 'January 2026' },
     { name: 'Pashupati Sapkota', date: 'February 2026' },
-    { name: 'Satya Prakash Sharma Kandel', date: 'March 2026' },
-    { name: 'Prem Khatri', date: 'April 2026' },
-    { name: 'Lila Nath Adhikari', date: 'September 2026' },
+    { name: 'Prem Khatri', date: 'March 2026' },
+    { name: 'Lila Nath Adhikari', date: 'April 2026' },
 ];
 
 export default meetingVenues;

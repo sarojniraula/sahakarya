@@ -45,8 +45,19 @@ function Activities() {
                             const today = new Date();
                             today.setDate(1);
                             
-                            const statusClass = eventDate < today ? "done" : "upcoming";
+                            let statusClass = "";
 
+                            const sameMonth =
+                                eventDate.getFullYear() === today.getFullYear() &&
+                                eventDate.getMonth() === today.getMonth();
+
+                            if (sameMonth) {
+                                statusClass = "current-month";
+                            } else if (eventDate < today) {
+                                statusClass = "done";
+                            } else {
+                                statusClass = "upcoming";
+                            }
                             return (
                                 <li key={index} className={`event-item ${statusClass}`}>
                                     <strong>{event.date}:</strong> Organized by <em>{event.name}</em>

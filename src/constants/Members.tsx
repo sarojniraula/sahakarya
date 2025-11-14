@@ -18,6 +18,8 @@ const members = [
     'Satya Prakash Sharma Kandel',
     'Bharat Giri',
     'Parbat Prasai',
+    'Rajesh Rayamajhi',
+    'Krishna Pandey'
 ];
 
 export default members;
