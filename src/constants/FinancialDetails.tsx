@@ -16,10 +16,12 @@ const financialDetails = [
     { date: 'September 2025', name: 'Rajendra Timsina' },
     { date: 'September 2025', name: 'Bharat Giri' },
     { date: 'October 2025', name: 'Sushil Panta' },
-    { date: 'November 2025', name: 'Prem Khatri' }
+    { date: 'November 2025', name: 'Prem Khatri' },
+    { date: 'December 2025', name: 'Yuba Raj Regmi' },
+    { date: 'January 2026', name: 'Loknath Timsina' }
 ];
 
-// Exclude Krishna Prasad Parajuli when marking remaining members as "Yet to Receive"
+// Exclude Krishna, Rajesh and Pandey when marking remaining members as "Yet to Receive"
 const excludedMembers = ['Krishna Bahadur Adhikari', 'Rajesh Rayamajhi', 'Krishna Pandey'];
 
 export const exitedMembers = ['Satya Prakash Sharma Kandel', 'Bharat Giri'];

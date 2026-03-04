@@ -13,9 +13,9 @@ const meetingVenues = [
     { name: 'Yuba Raj Regmi', date: 'October 2025' },
     { name: 'Saroj Niraula', date: 'November 2025' },
     { name: 'Dhaniram Sharma Bhandari', date: 'December 2025' },
-    { name: 'Alok Yadav', date: 'January 2026' },
-    { name: 'Pashupati Sapkota', date: 'February 2026' },
-    { name: 'Prem Khatri', date: 'March 2026' },
+    { name: 'Pashupati Sapkota', date: 'January 2026' },
+    { name: 'Prem Khatri', date: 'February 2026' },
+    { name: 'Alok Yadav', date: 'March 2026' },
     { name: 'Lila Nath Adhikari', date: 'April 2026' },
 ];
 
