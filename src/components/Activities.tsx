@@ -1,10 +1,14 @@
 ﻿import { useState } from 'react';
-import meetingVenues from '../constants/MeetingVenues';
-import financialDetails, { exitedMembers } from '../constants/FinancialDetails';
+import { getMeetingVenues } from '../constants/MeetingVenues';
+import { getFinancialDetails } from '../constants/FinancialDetails';
 import './ComponetCss.css';
 
 function Activities() {
+    const [activeRound, setActiveRound] = useState<'round1' | 'round2'>('round2');
+    const { details: financialDetailsList, exitedMembers } = getFinancialDetails(activeRound);
     const [activeActivity, setActiveActivity] = useState<"meetingVenues" | "financialDetails" | null>(null);
+    const [activeMeetingRound, setActiveMeetingRound] = useState<'round1' | 'round2'>('round2');
+    const { venues: meetingVenuesList } = getMeetingVenues(activeMeetingRound);
 
     return (
         <section id="activities" className="container">
@@ -32,8 +36,22 @@ function Activities() {
             {activeActivity === 'meetingVenues' && (
                 <div>
                     <h3>Meeting Venues</h3>
+                    <div className="toggle-buttons">
+                        <button
+                            onClick={() => setActiveMeetingRound('round2')}
+                            className={`toggle-button ${activeMeetingRound === 'round2' ? 'active' : ''}`}
+                        >
+                            Current Round
+                        </button>
+                        <button
+                            onClick={() => setActiveMeetingRound('round1')}
+                            className={`toggle-button ${activeMeetingRound === 'round1' ? 'active' : ''}`}
+                        >
+                            Archive
+                        </button>
+                    </div>
                     <ul>
-                        {meetingVenues.map((event, index) => {
+                        {meetingVenuesList.map((event, index) => {
                             const [monthStr, yearStr] = event.date.split(" ");
                             
                             const yearNum = parseInt(yearStr, 10);
@@ -71,8 +89,22 @@ function Activities() {
             {activeActivity === 'financialDetails' && (
                 <div>
                     <h3>Financial Details</h3>
+                    <div className="toggle-buttons">
+                        <button
+                            onClick={() => setActiveRound('round2')}
+                            className={`toggle-button ${activeRound === 'round2' ? 'active' : ''}`}
+                        >
+                            Current Round
+                        </button>
+                        <button
+                            onClick={() => setActiveRound('round1')}
+                            className={`toggle-button ${activeRound === 'round1' ? 'active' : ''}`}
+                        >
+                            Archive
+                        </button>
+                    </div>
                     <ul>
-                        {financialDetails.map((detail, index) => {
+                        {financialDetailsList.map((detail, index) => {
                             const [monthStr, yearStr] = detail.date !== "Undecided" ? detail.date.split(" ") : [null, null];
                             
                             const yearNum = yearStr ? parseInt(yearStr, 10) : null;

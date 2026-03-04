@@ -15,11 +15,10 @@ const members = [
     'Pashupati Nepali',
     'Yuba Raj Regmi',
     'Dhaniram Sharma Bhandari',
-    'Satya Prakash Sharma Kandel',
-    'Bharat Giri',
     'Parbat Prasai',
     'Rajesh Rayamajhi',
-    'Krishna Pandey'
+    'Krishna Pandey',
+    'Bhim Lal Neupane'
 ];
 
 export default members;
