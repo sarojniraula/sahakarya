@@ -64,8 +64,8 @@ const financialDetails: Record<string, Round> = {
     payouts: [
       { date: "January 2026", name: "Yuba Raj Regmi" },
       { date: "February 2026", name: "Loknath Timsina" },
-      { date: "March 2026", name: "Pashupati Nepali" },
-      { date: "April 2026", name: "Lok Raj Dhungana" },
+      { date: "March 2026", name: "Lok Raj Dhungana" },
+      { date: "April 2026", name: "Pashupati Nepali" },
       { date: "May 2026", name: "Saroj Niraula" },
       { date: "June 2026", name: "Suman Pudasaini" },
       { date: "September 2026", name: "Pashupati Sapkota" },
