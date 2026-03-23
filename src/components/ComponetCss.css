@@ -57,21 +57,31 @@
 }
 
 /* Activities Container */
-#activities .container {
+#activities {
     text-align: center;
     margin: 2rem 0;
 }
 
 /* Navigation Links */
-#activities ul {
+#activities > ul {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
-#activities ul li button {
+#activities div ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+#activities > ul li button {
     padding: 0.5rem 1rem;
     background-color: #ddd;
     color: black;
@@ -82,7 +92,7 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-#activities ul li button.active {
+#activities > ul li button.active {
     background-color: #6a11cb;
     color: white;
 }
@@ -90,8 +100,8 @@
 /* General Event Items */
 #activities ul li.event-item {
     padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 4px;
+    margin-bottom: 0;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
 }
