@@ -71,6 +71,7 @@ const financialDetails: Record<string, Round> = {
       { date: "July 2026", name: "Rajesh Rayamajhi" },
       { date: "August 2026", name: "Parbat Prasai" },
       { date: "September 2026", name: "Pashupati Sapkota" },
+      { date: "October 2026", name: "Rajendra Timsina" },
       { date: "October 2026", name: "Sushil Panta" }
     ]
   }
