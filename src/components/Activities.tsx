@@ -4,7 +4,7 @@ import { getFinancialDetails } from '../constants/FinancialDetails';
 import './ComponetCss.css';
 
 function Activities() {
-    const [activeRound, setActiveRound] = useState<'round1' | 'round2' | 'round3'>('round3');
+    const [activeRound, setActiveRound] = useState<'round1' | 'round2'>('round2');
     const { details: financialDetailsList, exitedMembers } = getFinancialDetails(activeRound);
     const [activeActivity, setActiveActivity] = useState<"meetingVenues" | "financialDetails" | null>(null);
     const [activeMeetingRound, setActiveMeetingRound] = useState<'round1' | 'round2' | 'round3'>('round3');
@@ -38,7 +38,7 @@ function Activities() {
                     <h3>Meeting Venues</h3>
                     <div className="toggle-buttons">
                         <button
-                            onClick={() => setActiveMeetingRound('round2')}
+                            onClick={() => setActiveMeetingRound('round3')}
                             className={`toggle-button ${activeMeetingRound === 'round3' ? 'active' : ''}`}
                         >
                             Current Round
