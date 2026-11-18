@@ -4,10 +4,10 @@ import { getFinancialDetails } from '../constants/FinancialDetails';
 import './ComponetCss.css';
 
 function Activities() {
-    const [activeRound, setActiveRound] = useState<'round1' | 'round2'>('round2');
+    const [activeRound, setActiveRound] = useState<'round1' | 'round2' | 'round3'>('round3');
     const { details: financialDetailsList, exitedMembers } = getFinancialDetails(activeRound);
     const [activeActivity, setActiveActivity] = useState<"meetingVenues" | "financialDetails" | null>(null);
-    const [activeMeetingRound, setActiveMeetingRound] = useState<'round1' | 'round2'>('round2');
+    const [activeMeetingRound, setActiveMeetingRound] = useState<'round1' | 'round2' | 'round3'>('round3');
     const { venues: meetingVenuesList } = getMeetingVenues(activeMeetingRound);
 
     return (
@@ -39,9 +39,15 @@ function Activities() {
                     <div className="toggle-buttons">
                         <button
                             onClick={() => setActiveMeetingRound('round2')}
-                            className={`toggle-button ${activeMeetingRound === 'round2' ? 'active' : ''}`}
+                            className={`toggle-button ${activeMeetingRound === 'round3' ? 'active' : ''}`}
                         >
                             Current Round
+                        </button>
+                        <button
+                            onClick={() => setActiveMeetingRound('round2')}
+                            className={`toggle-button ${activeMeetingRound === 'round2' ? 'active' : ''}`}
+                        >
+                            Archive 2
                         </button>
                         <button
                             onClick={() => setActiveMeetingRound('round1')}

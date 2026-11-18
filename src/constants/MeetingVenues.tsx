@@ -40,7 +40,7 @@ const meetingVenues: Record<string, MeetingRound> = {
   },
 
   round3: {
-    label: "Round 2 (Nov 2026 - June 2028)",
+    label: "Round 3 (Nov 2026 - June 2028)",
     venues: [
       { name: "Yuba Raj Regmi", date: "November 2026" },
       { name: "Bhim Lal Neupane", date: "December 2026" },
